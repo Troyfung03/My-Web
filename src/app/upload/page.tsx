@@ -11,15 +11,11 @@ export default function Page() {
   const {edgestore } = useEdgeStore();
   const [progress, setProgress] = useState(0);
   const [des, setDes]=useState('');
-  const [info, setInfo] = useState<{
-    url: string;
-    description: string;
-  }>();
   return (
     <div className="flex flex-col items-center m-6 gap-2">
       <SingleImageDropzone
-        width={200}
-        height={200}
+        width={375}
+        height={300}
         value={file}
         dropzoneOptions={{
           maxSize: 1024 * 1024 * 1, //1MB
@@ -62,9 +58,6 @@ export default function Page() {
               url: res.url,
               description: des,
             };
-          
-            setInfo(updatedInfo);
-          
 
             const r = await fetch('/api/photos', {
               method: 'POST',
@@ -73,9 +66,9 @@ export default function Page() {
               },
               body: JSON.stringify(updatedInfo)
             });
-
-
           }
+          
+          setProgress(0);
         }}>
         Upload
       </button>
