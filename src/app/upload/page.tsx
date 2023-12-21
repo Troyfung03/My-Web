@@ -2,10 +2,10 @@
 
 import { stringify } from "querystring";
 import { useState } from "react";
-import Link from "../../node_modules/next/dist/client/link";
-import { POST } from "./api/photos/route";
-import { SingleImageDropzone } from "./lib/components/single-image-dropzone";
-import { useEdgeStore } from "./lib/edgestore";
+import Link from "../../../node_modules/next/dist/client/link";
+import { POST } from "../api/photos/route";
+import { SingleImageDropzone } from "../lib/components/single-image-dropzone";
+import { useEdgeStore } from "../lib/edgestore";
 export default function Page() {
   const [file, setFile] = useState<File>();
   const {edgestore } = useEdgeStore();
