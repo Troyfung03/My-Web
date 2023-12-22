@@ -1,7 +1,6 @@
 'use client'
 import { Disclosure} from '@headlessui/react'
 import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
-import { usePathname } from 'next/navigation'
 
 
 const NavigationBar=()=>{
@@ -11,10 +10,6 @@ const NavigationBar=()=>{
     { name: 'Gallery', href: '/upload', current: false },
     { name: 'Time Management System', href: '#', current: false },
   ]
-
-  navigation.forEach((item) => {
-    item.current =  usePathname() === item.href;
-  });
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
   }
