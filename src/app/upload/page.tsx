@@ -24,9 +24,7 @@ export default function Page() {
   };
 
   return (
-
       <div className="flex flex-col items-center m-6 gap-2">
-
         <SingleImageDropzone
           width={375}
           height={300}
