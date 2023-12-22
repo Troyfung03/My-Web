@@ -2,7 +2,7 @@ import Photo from "../../models/photo";
 import { NextResponse } from "../../../../node_modules/next/server";
 import { connectMongoDB, closeMongoDBConnection } from "../../lib/mongodb" 
 
-export async function POST(request) {
+export async function POST(request: Request) {
     const { url, description } = await request.json();
     await connectMongoDB();
   
