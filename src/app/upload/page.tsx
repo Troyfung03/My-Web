@@ -99,7 +99,7 @@ export default function Page() {
         </button>
         <div>
           {data ? (
-            <div>
+            <div className='img-gallery'>
 
               {data.map((item) => (
                 <div key={item._id}>

@@ -1,13 +1,11 @@
 import { Inter } from 'next/font/google'
-import '../globals.css'
-import './gallery.css'
-import { EdgeStoreProvider } from '../lib/edgestore'
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Upload",
-  description: "upload for gallery",
+  title: "HomePage",
+  description: "HomePage",
 };
 
 export default function RootLayout({
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}><EdgeStoreProvider>{children}</EdgeStoreProvider></body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
