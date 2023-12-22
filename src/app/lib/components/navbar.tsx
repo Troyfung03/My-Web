@@ -9,7 +9,7 @@ const NavigationBar=()=>{
   const navigation = [
     { name: 'About me', href: '/', current: true },
     { name: 'Projects', href: '#', current: false },
-    { name: 'Gallery', href: '/upload', current: false },
+    { name: 'Gallery', href: '/gallery', current: false },
     { name: 'Time Management System', href: '#', current: false },
   ]
   function classNames(...classes: string[]) {
