@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <NavigationBar/>
-      {children}
       <Analytics />
       <SpeedInsights/>
+      <NavigationBar/>
+      {children}
       </body>
     </html>
   )
