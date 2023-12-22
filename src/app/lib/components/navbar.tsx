@@ -1,22 +1,24 @@
+'use client'
+import { Disclosure} from '@headlessui/react'
+import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
+import { usePathname } from 'next/navigation'
 
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const navigation = [
-  { name: 'Profile', href: '#', current: true },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Gallery', href: '/upload', current: false },
-  { name: 'Time Management System', href: '#', current: false },
-]
+const NavigationBar=()=>{
+  const navigation = [
+    { name: 'About me', href: '/', current: true },
+    { name: 'Projects', href: '#', current: false },
+    { name: 'Gallery', href: '/upload', current: false },
+    { name: 'Time Management System', href: '#', current: false },
+  ]
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
-
-const Nav=()=>{
+  navigation.forEach((item) => {
+    item.current =  usePathname === item.href;
+  });
+  function classNames(...classes: string[]) {
+    return classes.filter(Boolean).join(' ')
+  }
   return (
-    <div>
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
@@ -37,7 +39,7 @@ const Nav=()=>{
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-8 w-auto"
+                    className="h-10 w-auto"
                     src="./troy.png"
                     alt="Your Company"
                   />
@@ -84,7 +86,6 @@ const Nav=()=>{
         </>
       )}
     </Disclosure>
-    </div>
   )
 }
-export default Nav;
+export default NavigationBar;
