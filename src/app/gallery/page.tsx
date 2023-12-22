@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 import { useEffect, useState } from "react";
 export default function Page() {
   const [data, setData] = useState<any[]>([]);
@@ -24,7 +25,8 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {data.map((item) => (
               <div key={item._id} className="rounded-lg overflow-hidden">
-                <img className="w-full h-full object-cover transition duration-500 ease-in-out transform hover:scale-95" src={item.url} alt={item.description} />
+                <Image className="w-full h-full object-cover transition duration-500 ease-in-out transform hover:scale-95"  width={500}
+      height={500} src={item.url} alt={item.description} />
               </div>
             ))}
           </div>
