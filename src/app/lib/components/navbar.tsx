@@ -10,7 +10,7 @@ const NavigationBar=()=>{
     { name: 'About me', href: '/', current: true },
     { name: 'Projects', href: '#', current: false },
     { name: 'Gallery', href: '/gallery', current: false },
-    { name: 'Time Management System', href: '#', current: false },
+    // { name: 'Time Management System', href: '#', current: false },
   ]
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
