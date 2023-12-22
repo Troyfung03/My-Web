@@ -2,8 +2,6 @@
 import { useEffect, useState } from "react";
 import { SingleImageDropzone } from "../lib/components/single-image-dropzone";
 import { useEdgeStore } from "../lib/edgestore";
-
-
 export default function Page() {
   const [file, setFile] = useState<File>();
   const { edgestore } = useEdgeStore();

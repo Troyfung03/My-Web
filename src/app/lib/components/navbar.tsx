@@ -13,7 +13,7 @@ const NavigationBar=()=>{
   ]
 
   navigation.forEach((item) => {
-    item.current =  usePathname === item.href;
+    item.current =  usePathname() === item.href;
   });
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
