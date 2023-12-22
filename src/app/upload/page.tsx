@@ -2,12 +2,11 @@
 import { useEffect, useState } from "react";
 import { SingleImageDropzone } from "../lib/components/single-image-dropzone";
 import { useEdgeStore } from "../lib/edgestore";
-import Head from 'next/head'
 
 
 export default function Page() {
   const [file, setFile] = useState<File>();
-  const { edgestore } = useEdgeStore();
+  const {edgestore} = useEdgeStore();
   const [progress, setProgress] = useState(0);
   const [des, setDes] = useState('');
   const [data, setData] = useState<any[]>([]);
@@ -27,11 +26,6 @@ export default function Page() {
   };
 
   return (
-    <div>
-      <Head>
-        <meta name="troy" content="fung" />
-      </Head>
-
       <div className="flex flex-col items-center m-6 gap-2">
 
         <SingleImageDropzone
@@ -113,8 +107,7 @@ export default function Page() {
             <p>Loading data...</p>
           )}
         </div>
-      </div>
-    </div>)
+      </div>)
 }
 
 

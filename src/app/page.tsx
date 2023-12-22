@@ -1,12 +1,9 @@
-'use client';
-import { useEffect, useState } from "react";
-import Head from 'next/head'
-
+'use client'
 
 export default function Page() {
   return (
     <div>
-    </div>)
+      
+    </div>
+  )
 }
-
-
