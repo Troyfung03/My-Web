@@ -3,7 +3,8 @@ import { Alkatra } from 'next/font/google';
 import Link from 'next/link';
 
 const skills = [
-  { scope: 'Web', minor: 'Progamming Language', techinques: ['Javascript', 'HTML'] },
+  { scope: 'Web', minor: '', techinques: ['HTML','CSS','Javascript','TypeScript','Vue.js','Express.js','Next.js'] },
+  { scope: 'Others', minor: '', techinques: ['Java', 'Python','Data Analytics','SQL','MDX','MS Office'] },
 ]
 const alkatra = Alkatra({ subsets: ['latin'] })
 
