@@ -2,6 +2,9 @@
 import { Alkatra } from 'next/font/google';
 import Link from 'next/link';
 
+const skills = [
+  { scope: 'Web', minor: 'Progamming Language', techinques: ['Javascript', 'HTML'] },
+]
 const alkatra = Alkatra({ subsets: ['latin'] })
 
 export default function Page() {
@@ -19,10 +22,24 @@ export default function Page() {
           <br />
           <p>Thank you for taking the time to visit my website. I look forward to connecting with fellow enthusiasts and professionals to embark on exciting journeys together.</p>
         </div>
-        <div>
-          <h1 className={`text-1xl md:pl-5 font-bold ${alkatra.className}`}>Skills</h1>
+        <div className="md:pl-5 ">
+          <h1 className={`text-1xl font-bold ${alkatra.className}`}>Skills</h1>
+          {skills.map((item) => (
+            <div key={item.scope}>
+              <h1 className="text-sm font-bold">{item.scope}</h1>
+              <ul>
+                {item.techinques.map((x) => (
+                  <li key={x}>
+                    {x}
+                  </li>
+                ))
+                }
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
+
       <div className="flex justify-between text-xs">
         <div>
           <p>Email:  fungtroy63@gmail.com</p>
