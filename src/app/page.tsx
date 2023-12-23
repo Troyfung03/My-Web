@@ -3,7 +3,7 @@ import { Alkatra } from 'next/font/google';
 const alkatra = Alkatra({ subsets: ['latin'] })
 export default function Page() {
   return (
-    <div className={`container mx-auto py-10 pa`}>
+    <div className={"container mx-auto py-10 pa"}>
       <h1 className={`text-2xl font-bold ${alkatra.className}`}>I am Troy</h1>
       <div className=" grid grid-cols-1 sm:grid-cols-2 py-5 gap-4 fa ">
       <div>
