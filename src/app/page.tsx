@@ -19,7 +19,7 @@ export default function Page() {
           <p>Thank you for taking the time to visit my website. I look forward to connecting with fellow enthusiasts and professionals to embark on exciting journeys together.</p>
         </div>
         <div>
-          <h1 className={`text-1xl ml-5 font-bold ${alkatra.className}`}>Skills</h1>
+          <h1 className={`text-1xl md:pl-5 font-bold ${alkatra.className}`}>Skills</h1>
         </div>
       </div>
 
