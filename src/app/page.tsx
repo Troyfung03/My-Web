@@ -24,12 +24,13 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-between text-xs">
-        <p>
+        <div>
           <span>LinkedIn:  </span>
           <a className="text-blue-500 hover:text-blue-700" href="https://www.linkedin.com/in/troy-fung-081030237">
             www.linkedin.com/in/troy-fung-081030237
           </a>
-        </p>
+          <p>Email:  fungtroy63@gmail.com</p>
+        </div>
         <p>Next.js was used to create this website.</p>
       </div>
 
