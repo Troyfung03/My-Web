@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div className="container mx-auto py-10 pa divide-y">
       <h1 className={`text-2xl font-bold ${alkatra.className}`}>I am Troy</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 py-5 gap-4 fa divide-x">
+      <div className="grid grid-cols-1 sm:grid-cols-2 py-5 gap-4 fa md:divide-x">
 
         <div>
           <h1 className={`text-1xl font-bold ${alkatra.className}`}>Introduction</h1>
