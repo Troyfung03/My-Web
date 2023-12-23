@@ -1,10 +1,14 @@
 'use client'
 import { Alkatra } from 'next/font/google';
 const alkatra = Alkatra({ subsets: ['latin'] })
+
 export default function Page() {
   return (
     <div className={"container mx-auto py-10 pa"}>
-      <h1 className={`text-2xl font-bold ${alkatra.className}`}>I am Troy</h1>
+      <div className={alkatra.className}>
+      <h1 className="text-2xl font-bold">I am Troy</h1>
+      </div>
+
       <div className=" grid grid-cols-1 sm:grid-cols-2 py-5 gap-4 fa ">
       <div>
       <p>Hello, everyone! My name is Troy, and I'm thrilled to introduce myself. I am a passionate Computer Science student in my third year of studies.
