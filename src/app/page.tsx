@@ -22,7 +22,12 @@ export default function Page() {
           <h1 className={`text-1xl md:pl-5 font-bold ${alkatra.className}`}>Skills</h1>
         </div>
       </div>
-
+    <div className="flex justify-between">
+<a href="https://www.linkedin.com/in/troy-fung-081030237/">1
+</a>
+<p>1</p>
     </div>
+    </div>
+
   )
 }
