@@ -7,8 +7,22 @@
     height: auto;
 }
 
+.fa{
+    font-size: medium;
+}
+.pa {
+}
+
 @media (max-width: 767px) {
     .smaller-image {
         max-width: 75%;
     }
+    .fa{
+        font-size: larger;
+    }
+    .pa {
+        margin-left: 15px;
+    }
+    
 }
+
