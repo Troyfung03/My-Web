@@ -1,0 +1,8 @@
+.pa {
+}
+
+@media (max-width: 767px) {
+    .pa {
+        margin-left: 15px;
+    }
+}

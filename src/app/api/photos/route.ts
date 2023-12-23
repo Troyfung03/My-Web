@@ -3,11 +3,11 @@ import { NextResponse } from "../../../../node_modules/next/server";
 import { connectMongoDB, closeMongoDBConnection } from "../../lib/mongodb" 
 
 export async function POST(request: Request) {
-    const { url, description } = await request.json();
+    const { url,thumbnailUrl,description } = await request.json();
     await connectMongoDB();
   
     try {
-      await Photo.create({ url, description });
+      await Photo.create({ url,thumbnailUrl,description });
       return NextResponse.json({ message: "Photo Posted" }, { status: 201 });
     } catch (error) {
       console.error(error);

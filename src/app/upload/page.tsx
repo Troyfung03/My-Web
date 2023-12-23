@@ -69,6 +69,7 @@ export default function Page() {
               //save data
               const updatedInfo = {
                 url: res.url,
+                thumbnailUrl:res.thumbnailUrl,
                 description: des,
               };
 

@@ -19,9 +19,11 @@
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3",
     "next": "14.0.4",
+    "placeholder": "^1.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
+    "sharp": "^0.33.1",
     "tailwind-merge": "^2.1.0",
     "zod": "^3.22.4"
   },

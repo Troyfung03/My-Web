@@ -1,6 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 const photoSchema = new Schema({
     url: String,
+    thumbnailUrl:String || null,
     description: String,
 },{
     timestamps:true,
