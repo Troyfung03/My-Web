@@ -1,5 +1,6 @@
 'use client'
 import { Alkatra } from 'next/font/google';
+import Link from 'next/link';
 
 const alkatra = Alkatra({ subsets: ['latin'] })
 
@@ -22,11 +23,16 @@ export default function Page() {
           <h1 className={`text-1xl md:pl-5 font-bold ${alkatra.className}`}>Skills</h1>
         </div>
       </div>
-    <div className="flex justify-between">
-<a href="https://www.linkedin.com/in/troy-fung-081030237/">1
-</a>
-<p>1</p>
-    </div>
+      <div className="flex justify-between text-xs">
+        <p>
+          <span>LinkedIn:  </span>
+          <a className="text-blue-500 hover:text-blue-700" href="https://www.linkedin.com/in/troy-fung-081030237">
+            www.linkedin.com/in/troy-fung-081030237
+          </a>
+        </p>
+        <p>Next.js was used to create this website.</p>
+      </div>
+
     </div>
 
   )
