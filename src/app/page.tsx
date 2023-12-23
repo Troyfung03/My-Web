@@ -4,7 +4,7 @@ const alkatra = Alkatra({ subsets: ['latin'] })
 
 export default function Page() {
   return (
-    <div className={"container mx-auto py-10 pa"}>
+    <div className="container mx-auto py-10 pa">
       <div className={alkatra.className}>
       <h1 className="text-2xl font-bold">I am Troy</h1>
       </div>
