@@ -1,11 +1,11 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import Image from "next/image";
 import { Indie_Flower } from "next/font/google";
 
 
-const indie = Indie_Flower({ weight: "400", subsets: ["latin"] });
 
+const indie = Indie_Flower({ weight: "400", subsets: ["latin"] });
 export default function Page() {
   const [data, setData] = useState<any[]>([]);
 
@@ -26,18 +26,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-indigo-900">
       <div className="container mx-auto py-10">
-        <ul className="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+
         <div className={indie.className}>
           <div className="mb-5 pa">
             <h1 className="text-2xl font-bold">My gallery</h1>
