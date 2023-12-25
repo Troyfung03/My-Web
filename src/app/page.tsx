@@ -1,6 +1,5 @@
 'use client'
 import { Alkatra, Preahvihear } from 'next/font/google';
-import Link from 'next/link';
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { Progress } from "@nextui-org/react";
 
