@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef, useState, RefObject } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Indie_Flower } from "next/font/google";
 
@@ -23,24 +23,21 @@ export default function Page() {
     }
   };
 
-
-  const circlesRef: RefObject<HTMLUListElement> = useRef(null);
-
   return (
     <div className="min-h-screen bg-indigo-900">
-      <ul className="circles" ref={circlesRef}>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
       <div className="container mx-auto py-10">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <div className={indie.className}>
           <div className="mb-5 pa">
             <h1 className="text-2xl font-bold">My gallery</h1>
