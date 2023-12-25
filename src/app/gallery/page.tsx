@@ -1,11 +1,9 @@
 'use client'
 import { useEffect, useState} from "react";
 import Image from "next/image";
-import { Indie_Flower } from "next/font/google";
+import { Alkatra} from 'next/font/google';
+const alkatra = Alkatra({ subsets: ['latin'] })
 
-
-
-const indie = Indie_Flower({ weight: "400", subsets: ["latin"] });
 export default function Page() {
   const [data, setData] = useState<any[]>([]);
 
@@ -24,12 +22,12 @@ export default function Page() {
   };
 
   return (
-    <div className="min-h-screen bg-indigo-900">
+    <div className="min-h-screen">
       <div className="container mx-auto py-10">
 
-        <div className={indie.className}>
+        <div className={alkatra.className}>
           <div className="mb-5 pa">
-            <h1 className="text-2xl font-bold">My gallery</h1>
+            <h1 className="text-3xl font-bold">My gallery</h1>
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

@@ -8,7 +8,7 @@ import { useEffect, useState} from 'react'
 const NavigationBar=()=>{
   const navigation = [
     { name: 'About me', href: '/', current: true },
-    { name: 'Projects', href: '#', current: false },
+    { name: 'Projects', href: '/projects', current: false },
     { name: 'Gallery', href: '/gallery', current: false },
     // { name: 'Time Management System', href: '#', current: false },
   ]

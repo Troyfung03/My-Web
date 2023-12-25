@@ -2,7 +2,6 @@ import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import NavigationBar from './lib/components/navbar';
-import Nav from './lib/components/Nav';
 const inter = Inter({ subsets: ['latin'] })
 
 
