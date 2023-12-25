@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 import { Accordion, AccordionItem } from "@nextui-org/react";
 
 const skills = [
-  { scope: 'Programming Languages and Techniques', minor: '', techinques: ['Java', 'Python', 'R', 'SQL', 'MDX', 'JavaScript', 'TypeScript', 'HTML', 'CSS'] },
-  { scope: 'Web Framework', minor: '', techinques: ['Vue.js', 'Next.js', 'Node.js', 'express', 'Bootstrap', 'Tailwind CSS'] },
+  { scope: 'Programming Languages and Techniques', minor: '', techinques: ['Java', 'Python', 'R', 'SQL', 'MDX', 'JavaScript', 'TypeScript', ] },
+  { scope: 'Web Development', minor: '', techinques: ['Vue.js', 'Next.js', 'Node.js', 'express', , 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS'] },
   {
     scope: 'Data Analytics and Related Fields', techinques: ['Data Pre-processing', 'Predictive Analysis',
       'Descriptive Analysis', 'Data Visualization', 'SSIS', 'SSAS', 'SSMS', 'Excel',]
