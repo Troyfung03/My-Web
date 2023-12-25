@@ -20,9 +20,6 @@ const preahvihear = Preahvihear({
 })
 
 export default function Page() {
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap");
-  }, [])
   return (
     <div className="container mx-auto py-10 pa divide-y">
       <h1 className={`text-3xl font-bold ${alkatra.className}`}>I am Troy</h1>
