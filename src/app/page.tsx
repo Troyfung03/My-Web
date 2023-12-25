@@ -1,17 +1,47 @@
 'use client'
 import { Alkatra, Preahvihear } from 'next/font/google';
 import Link from 'next/link';
-import { useEffect } from 'react';
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Progress } from "@nextui-org/react";
 
 const skills = [
-  { scope: 'Programming Languages and Techniques', minor: '', techinques: ['Java', 'Python', 'R', 'SQL', 'MDX', 'JavaScript', 'TypeScript', ] },
-  { scope: 'Web Development', minor: '', techinques: ['Vue.js', 'Next.js', 'Node.js', 'express', , 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS'] },
   {
-    scope: 'Data Analytics and Related Fields', techinques: ['Data Pre-processing', 'Predictive Analysis',
-      'Descriptive Analysis', 'Data Visualization', 'SSIS', 'SSAS', 'SSMS', 'Excel',]
+    scope: 'Programming Languages', minor: '', techinques: [
+      { skill: 'Java', type: 'secondary', progress: 95 },
+      { skill: 'Python', type: 'secondary', progress: 80 },
+      { skill: 'R', type: 'secondary', progress: 50 },
+      { skill: 'SQL', type: 'secondary', progress: 60 },
+      { skill: 'MDX', type: 'secondary', progress: 60 },
+      { skill: 'JavaScript', type: 'secondary', progress: 75 },
+      { skill: 'TypeScript', type: 'secondary', progress: 70 },]
   },
-  { scope: 'Others', minor: '', techinques: ['Microsoft Office', 'Microsoft Azure', 'MongoDB'] },
+  {
+    scope: 'Web Development', minor: '', techinques: [
+      { skill: 'Vue.js', type: 'secondary', progress: 85 },
+      { skill: 'Next.js', type: 'secondary', progress: 85 },
+      { skill: 'Node.js', type: 'secondary', progress: 65 },
+      { skill: 'express', type: 'secondary', progress: 70 },
+      { skill: 'HTML', type: 'secondary', progress: 70 },
+      { skill: 'CSS', type: 'secondary', progress: 60 }, 
+      { skill: 'Bootstrap', type: 'secondary', progress: 70 },
+      { skill: 'Tailwind CSS', type: 'secondary', progress: 50 }]
+  },
+  {
+    scope: 'Data Analytics and Related Fields', techinques: [
+      { skill: 'Data Pre-processing', type: 'secondary', progress: 90 },
+      { skill: 'Descriptive Analysis', type: 'secondary', progress: 80 },
+      { skill: 'Predictive Analysis', type: 'secondary', progress: 80 },
+      { skill: 'Data Visualization', type: 'secondary', progress: 85 },
+      { skill: 'SSIS', type: 'secondary', progress: 50 },
+      { skill: 'SSAS', type: 'secondary', progress: 50 },
+      { skill: 'SSMS', type: 'secondary', progress: 50 },]
+  },
+  {
+    scope: 'Others', minor: '', techinques: [
+      { skill: 'Microsoft Office', type: 'secondary', progress: 85 },
+      { skill: 'Microsoft Azure', type: 'secondary', progress: 55 },
+      { skill: 'MongoDB', type: 'secondary', progress: 85 },]
+  },
 ]
 const alkatra = Alkatra({ subsets: ['latin'] })
 const preahvihear = Preahvihear({
@@ -43,9 +73,21 @@ export default function Page() {
                   <div id={item.scope}>
                     <ul className={`${preahvihear.className}`}>
                       {item.techinques.map((x) => (
-                        <li key={x}>
-                          {x}
+                        <li key={x.skill}>
+                          {x.skill}
+                          <Progress
+                            aria-label="Loading..."
+                            value={x.progress}
+                            classNames={{
+                              base: "max-w-md",
+                              track: "drop-shadow-md border border-default",
+                              indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+                              label: "tracking-wider font-medium text-default-600",
+                              value: "text-foreground/60",
+                            }}
+                          />
                         </li>
+
                       ))
                       }
                     </ul>
