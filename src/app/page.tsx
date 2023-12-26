@@ -62,6 +62,7 @@ export default function Page() {
           <br />
           <p>Thank you for taking the time to visit my website. I look forward to connecting with fellow enthusiasts and professionals to embark on exciting journeys together.</p>
         </div>
+        
         <div className="md:pl-5 ">
           <h1 className={`${alkatra.className} text-2xl font-bold `}>Skills</h1>
           <Accordion variant="bordered">
