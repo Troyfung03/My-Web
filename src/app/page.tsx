@@ -67,7 +67,7 @@ export default function Page() {
           <h1 className={`${alkatra.className} text-2xl font-bold `}>Skills</h1>
           <Accordion variant="light">
             {skills.map((item, index) => (
-              <AccordionItem key={index} aria-label="Accordion 1" title={item.scope}>
+              <AccordionItem key={index} title={item.scope}>
                 <div>
                   <div id={item.scope}>
                     <ul className={`${preahvihear.className}`}>
