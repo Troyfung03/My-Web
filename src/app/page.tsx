@@ -65,7 +65,7 @@ export default function Page() {
         
         <div className="md:pl-5 ">
           <h1 className={`${alkatra.className} text-2xl font-bold `}>Skills</h1>
-          <Accordion variant="bordered">
+          <Accordion variant="light">
             {skills.map((item, index) => (
               <AccordionItem key={index} aria-label="Accordion 1" title={item.scope}>
                 <div>
